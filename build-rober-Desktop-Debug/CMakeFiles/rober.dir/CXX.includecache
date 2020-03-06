@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/javi/Documents/Prueba nivel/rober/main.cpp
+vector
+-
+math.h
+-
+iostream
+-
+string
+-
+iomanip
+-
+sstream
+-
+
