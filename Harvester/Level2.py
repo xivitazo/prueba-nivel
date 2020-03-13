@@ -1,4 +1,4 @@
-input = '23 12 1 12'
+input = '5 2 5 2'
 def getPos (n_rows, n_cols, row, col) :
     return n_cols*(row-1)+col
 splited=input.split()
@@ -36,16 +36,6 @@ while 1 :
     else:
         act_col+=col_avance
 
-while 1 :
-    #print ('col: '+str(act_col)+'row: ' + str(act_row))
-    if (act_col == n_cols and col_avance==1 and act_row==n_rows and row_avance==1) or (act_col==1 and  col_avance==-1 and act_row==n_rows and row_avance==1) or (act_col == n_cols and col_avance==1 and act_row==1 and row_avance==-1) or (act_col==1 and  col_avance==-1 and act_row==1 and row_avance==-1):
-        break
-    elif (act_col==n_cols and col_avance==1) or (act_col==1 and  col_avance==-1) :
-        act_row+=row_avance
-        col_avance=-col_avance
-    else:
-        act_col+=col_avance
-    output += str(getPos(n_rows,n_cols,act_row, act_col)) + ' '
 
 
 print (output)
